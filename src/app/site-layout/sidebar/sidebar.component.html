@@ -1,8 +1,5 @@
-<div class="border-end bg-white" id="sidebar-wrapper">
-  
-  <div class="list-group ">
-    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
-    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
-    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
+<div class="border-end bg-white mt-5" id="sidebar-wrapper">
+  <div class="list-group" *ngFor="let cat of categoryList">
+    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="products/category/{{cat.id}}"> {{cat.categoryName}} </a>
   </div>
 </div>
